@@ -1,15 +1,33 @@
 package com.gotojava;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 public class HeroTest {
+    private static Hero firstHero, secondHero;
+
+    @BeforeAll
+    static void beforeClass() {
+        firstHero = new Hero(1);
+        secondHero = new Hero(1);
+    }
 
     @Test
     void testHeroInfo() {
-        Hero hero = new Hero(1);
-        String info = hero.checkInfo();
+        String info = firstHero.checkInfo();
         Assertions.assertEquals("Puncher with level 1", info);
     }
+
+    @Test
+    void testHeroLevelUp() {
+        secondHero.expIncreased(110);
+
+        String info = secondHero.checkInfo();
+        Assertions.assertEquals("Puncher with level 2", info);
+    }
+
+    
+    
     
 }
