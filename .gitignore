@@ -1,3 +1,4 @@
+.idea
 .cph
 target/
 !.mvn/wrapper/maven-wrapper.jar
