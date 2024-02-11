@@ -23,6 +23,7 @@ public class Hero implements HeroInterface {
         System.out.println("You reached Level " + level);
     }
 
+    // TODO: check address newWeapon sama dengan attribute weapon class
     @Override
     public void addWeapon(Weapon newWeapon) {
         this.weapon = newWeapon;

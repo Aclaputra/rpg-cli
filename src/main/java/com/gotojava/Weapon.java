@@ -7,13 +7,13 @@ public class Weapon implements WeaponInterface{
 
     @Override
     public void Attack() {
-        // TODO Auto-generated method stub
+        // FIXME Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'Attack'");
     }
 
     @Override
     public void Parry() {
-        // TODO Auto-generated method stub
+        // FIXME Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'Parry'");
     }   
 }
