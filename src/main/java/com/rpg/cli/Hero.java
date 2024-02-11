@@ -27,6 +27,7 @@ public class Hero implements HeroInterface {
     @Override
     public void addWeapon(Weapon newWeapon) {
         this.weapon = newWeapon;
+        System.out.println("adding weapon");
     }
 
     @Override
