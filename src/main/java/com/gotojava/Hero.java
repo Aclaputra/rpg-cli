@@ -4,6 +4,7 @@ public class Hero implements HeroInterface {
     private String role;
     private int level;
     private double experience;
+    private Weapon weapon;
 
     Hero(int level) {
         this.role = "Puncher";
@@ -19,12 +20,12 @@ public class Hero implements HeroInterface {
             System.out.println("Hero Leveled up to Level " + level);
             expIncreased(experience -= 100);
         }
-        System.out.println("You reached Level " + experience);
+        System.out.println("You reached Level " + level);
     }
 
     @Override
-    public void addWeapon(Weapon name) {
-
+    public void addWeapon(Weapon newWeapon) {
+        this.weapon = newWeapon;
     }
 
     @Override
