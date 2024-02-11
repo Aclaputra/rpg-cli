@@ -1,4 +1,4 @@
-package com.gotojava;
+package com.rpg.cli;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class HelloTest {
 
     @Test
-    void testHelloPerson() {
+    void helloPersonTest() {
         Main main = new Main();
         Assertions.assertEquals(main.hello("Acla"), "Hello Acla");
     }
@@ -16,8 +16,4 @@ public class HelloTest {
         Main main = new Main();
         Assertions.assertEquals(main.hello("World"), "Hello World");
     }
-
-
-
-    
 }

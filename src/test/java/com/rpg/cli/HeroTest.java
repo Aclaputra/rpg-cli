@@ -1,4 +1,4 @@
-package com.gotojava;
+package com.rpg.cli;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -14,7 +14,7 @@ public class HeroTest {
     }
 
     @Test
-    void testHeroInfo() {
+    void TestHeroInfo() {
         String info = firstHero.checkInfo();
         Assertions.assertEquals("Puncher with level 1", info);
     }

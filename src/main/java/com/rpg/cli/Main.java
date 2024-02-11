@@ -1,4 +1,4 @@
-package com.gotojava;
+package com.rpg.cli;
 
 interface MainInterface {
     String hello(String name);

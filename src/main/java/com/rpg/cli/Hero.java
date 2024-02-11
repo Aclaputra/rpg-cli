@@ -1,4 +1,4 @@
-package com.gotojava;
+package com.rpg.cli;
 
 public class Hero implements HeroInterface {
     private String role;
@@ -6,7 +6,7 @@ public class Hero implements HeroInterface {
     private double experience;
     private Weapon weapon;
 
-    Hero(int level) {
+    public Hero(int level) {
         this.role = "Puncher";
         this.level = level;
     }
