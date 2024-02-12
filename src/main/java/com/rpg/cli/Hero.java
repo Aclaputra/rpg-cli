@@ -21,12 +21,13 @@ public class Hero implements HeroInterface {
 
     @Override
     public void expIncreased(double experience) {
+        int fibonacciNumber = fibonacci(level);
         this.experience += experience;
-        if (this.experience >= 100) {
+        if (this.experience >= fibonacciNumber) {
             level++;
             this.experience = 0;
             System.out.println("Hero Leveled up to Level " + level);
-            expIncreased(experience -= fibonacci(level));
+            expIncreased(experience -= fibonacciNumber);
         }
         System.out.println("You reached Level " + level);
     }
