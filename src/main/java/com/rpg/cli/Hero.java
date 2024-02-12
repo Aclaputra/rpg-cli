@@ -11,6 +11,14 @@ public class Hero implements HeroInterface {
         this.level = level;
     }
 
+    // Hero will level up based on experience & fibonacci rule.
+    public int fibonacci(int n) {
+        if (n <= 1)
+            return n;
+        else
+            return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
     @Override
     public void expIncreased(double experience) {
         this.experience += experience;
@@ -18,12 +26,11 @@ public class Hero implements HeroInterface {
             level++;
             this.experience = 0;
             System.out.println("Hero Leveled up to Level " + level);
-            expIncreased(experience -= 100);
+            expIncreased(experience -= fibonacci(level));
         }
         System.out.println("You reached Level " + level);
     }
 
-    // TODO: check address newWeapon sama dengan attribute weapon class
     @Override
     public void addWeapon(Weapon newWeapon) {
         this.weapon = newWeapon;

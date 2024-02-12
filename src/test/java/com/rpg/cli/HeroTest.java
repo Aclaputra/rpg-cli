@@ -24,7 +24,7 @@ public class HeroTest {
         secondHero.expIncreased(110);
 
         String info = secondHero.checkInfo();
-        Assertions.assertEquals("Puncher with level 2", info);
+        Assertions.assertEquals("Puncher with level 6", info);
     }
 
     
